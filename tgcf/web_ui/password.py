@@ -23,7 +23,7 @@ def check_password(st):
         st.text_input(
             "Password", type="password", on_change=password_entered, key="password"
         )
-        st.error("😕 Password incorrect")
+        st.error("😕 Senha errada. Contate JV para fazer o pagamento e obtér sua senha de acesso ao bot. https://api.whatsapp.com/send?phone=5584998493595")
         return False
     else:
         # Password correct.
