@@ -38,21 +38,20 @@ if check_password(st):
             st.markdown(
                 """
 
-            Link to repl: https://replit.com/@aahnik/tg-login?v=1
+            Entre com sua conta em: https://t.me/SessionStringsBot
 
-            _Click on the above link and enter api id, api hash, and phone no to generate session string._
+            Clique em /start ou digite /start
 
-            **Note from developer:**
+            Depois: Clique no botão Telethon
 
-            Due some issues logging in with a user account using a phone no is not supported in this web interface.
+            Depois: Digite as credenciais conforme o bot for solicitando (api ID primeiro, depois HASH, depois seu número de telefone)
 
-            I have built a command-line program named tg-login (https://github.com/aahnik/tg-login) that can generate the session string for you.
+            Irá chegar um código no telegram, e você deverá digitar ele conforme o bot solicita.
 
-            You can run tg-login on your computer, or securely in this repl. tg-login is open source, and you can also inspect the bash script running in the repl.
+            Quando ele gerar com sucesso, irá aparecer um botão com o nome SAVED MESSAGES. Digite isso na barra de busca do telegram.
 
-            What is a session string ?
-            https://docs.telethon.dev/en/stable/concepts/sessions.html#string-sessions
-
+            Você encontrará uma mensagem salva com a sessão string. Copie ela e traga até o site.
+            Dúvidas? meu contato: https://api.whatsapp.com/send?phone=5584998493595
             """
             )
 
