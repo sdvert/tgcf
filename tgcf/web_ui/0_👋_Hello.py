@@ -6,12 +6,12 @@ from tgcf.config import read_config
 CONFIG = read_config()
 
 st.set_page_config(
-    page_title="Hello",
+    page_title="Inicío",
     page_icon="👋",
 )
 hide_st(st)
 switch_theme(st,CONFIG)
-st.write("# Welcome to tgcf 👋")
+st.write("# Bem vindo ao Robô de repasse do Telegram (JV.BOTS) 👋")
 
 html = """
 <p align="center">
@@ -23,23 +23,23 @@ st.components.v1.html(html, width=None, height=None, scrolling=False)
 with st.expander("Features"):
     st.markdown(
         """
-    tgcf is the ultimate tool to automate custom telegram message forwarding.
+    Essa é a ferramenta definitiva para automatizar o encaminhamento personalizado de mensagens do telegram.
 
-    The key features are:
+    Os principais recursos são:
 
-    - Forward messages as "forwarded" or send a copy of the messages from source to destination chats. A chat can be anything: a group, channel, person or even another bot.
+    - Encaminhe mensagens ou envie uma cópia das mensagens dos bate-papos de origem para destino. Uma mensagem pode ser enviada com qualquer coisa: para um grupo, canal, pessoa ou até outro bot.
 
-    - Supports two modes of operation past or live. The past mode deals with all existing messages, while the live mode is for upcoming ones.
+    - Suporta dois modos de operação passado ou ativo. O modo anterior trata de todas as mensagens existentes, enquanto o modo ao vivo é para as próximas.
+    
+    - Você pode fazer login com um bot ou uma conta de usuário. O Telegram impõe certas limitações às contas de bot. Você pode usar uma conta de usuário para realizar os encaminhamentos, se desejar.
 
-    - You may login with a bot or an user account. Telegram imposes certain limitations on bot accounts. You may use an user account to perform the forwards if you wish.
+    - Execute manipulação personalizada em mensagens. Você pode filtrar, formatar, substituir, colocar marca d'água, ocr e fazer o que mais precisar!
 
-    - Perform custom manipulation on messages. You can filter, format, replace, watermark, ocr and do whatever else you need !
+    - Wiki detalhado + tutorial em vídeo. 
 
-    - Detailed wiki + Video tutorial. You can also get help from the community.
+    - Se você é um desenvolvedor python, escrever plugins para tgcf é como roubar doce de um bebê. Os plug-ins modificam a mensagem antes de serem enviadas ao chat de destino.
 
-    - If you are a python developer, writing plugins for tgcf is like stealing candy from a baby. Plugins modify the message before they are sent to the destination chat.
-
-    What are you waiting for? Star the repo and click Watch to recieve updates.
+    Confira nosso canal no youtube: https://www.youtube.com/channel/UCuK62MxQZFulRALHMq6hS9w
 
         """
     )
